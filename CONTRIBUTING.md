@@ -66,7 +66,7 @@ We use **Tailwind CSS** and **Shadcn UI**. Please stick to the brand colors defi
 - **IEEE Gold**: `#FFB81C`
 - **IEEE Blue**: `#00629B`
 
-### 🚀 Optimization (CRITICAL)
+### Optimization (CRITICAL)
 Before committing any **new images**, you **MUST** run the optimization script. Our website uses WebP format to maintain high speed.
 
 ```bash
