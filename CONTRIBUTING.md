@@ -2,7 +2,7 @@
 
 Welcome! We're excited that you're interested in contributing to our website. This document provides everything you need to know about the project structure, how to set things up locally, and our development workflow.
 
-## 📦 Project Setup
+## Project Setup
 
 ### 1. Prerequisites
 - **Node.js**: [LTS version (e.g., v20+)](https://nodejs.org/)
@@ -39,7 +39,7 @@ This ensures that both the frontend (Vite) and the backend (Vercel Serverless Fu
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```text
 ├── public/                 # Static assets (favicons, fonts, etc.)
@@ -58,9 +58,9 @@ This ensures that both the frontend (Vite) and the backend (Vercel Serverless Fu
 
 ---
 
-## ⚡ Development Guidelines
+## Development Guidelines
 
-### 🎨 Design System
+### Design System
 We use **Tailwind CSS** and **Shadcn UI**. Please stick to the brand colors defined in `tailwind.config.ts`:
 - **IEEE Navy**: `#012169`
 - **IEEE Gold**: `#FFB81C`
@@ -88,7 +88,7 @@ npm run optimize
 
 ---
 
-## 📮 Contact & Support
+## Contact & Support
 This repository is primarily maintained by and for the **IT Department** of IEEE S.B EMSI Marrakesh. 
 
 If you've been assigned to work on this project, please coordinate with the **IT Section Manager** or **IT Assistant** for any architectural decisions or major feature additions.
