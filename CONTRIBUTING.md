@@ -77,7 +77,7 @@ npm run optimize
 - **Don't** upload raw photos (>2MB).
 - **Don't** use JPG/PNG in data files; always reference `.webp`.
 
-### 🔄 Contributing Workflow
+### Contributing Workflow
 1.  **Fork** the repository.
 2.  **Create a feature branch** (`git checkout -b feature/amazing-feature`).
 3.  **Run `npm run optimize`** if you added new images.
