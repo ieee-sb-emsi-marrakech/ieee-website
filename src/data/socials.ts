@@ -1,5 +1,5 @@
 /**
- * Official IEEE EMSI Marrakesh Contact Information
+ * Official IEEE EMSI Marrakech Contact Information
  * Centralized configuration for all social media links and contact details
  */
 
@@ -18,22 +18,22 @@ export interface ContactInfo {
  * Official Social Media Links
  */
 export const SOCIAL_LINKS = {
-    linkedin: "https://www.linkedin.com/in/ieeestudentbranchemsimarrakech/",
-    instagram: "https://www.instagram.com/ieee.emsi.marrakech/",
-    github: "https://github.com/ieee-student-branch-emsi-marrakesh",
+    linkedin: "https://www.linkedin.com/company/ieee-sb-emsi-marrakech",
+    instagram: "https://www.instagram.com/ieee.sb.emsi.marrakech",
+    github: "https://github.com/ieee-sb-emsi-marrakech",
 } as const;
 
 /**
  * Official Contact Email
  */
-export const CONTACT_EMAIL = "studentbranchiee@gmail.com";
+export const CONTACT_EMAIL = "ieee.sb.emsi.marrakech@gmail.com";
 
 /**
  * Contact Information
  */
 export const CONTACT_INFO: ContactInfo = {
     email: CONTACT_EMAIL,
-    location: "EMSI Guéliz, Marrakesh, Morocco",
+    location: "EMSI Targa, Marrakech, Morocco",
 };
 
 /**

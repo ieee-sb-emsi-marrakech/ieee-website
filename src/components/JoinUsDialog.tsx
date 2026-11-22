@@ -128,7 +128,7 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
                                     </div>
                                     <div>
                                         <h2 className="text-2xl font-black text-white">Join IEEE S.B</h2>
-                                        <p className="text-sm text-gray-400">EMSI Marrakesh</p>
+                                        <p className="text-sm text-gray-400">EMSI Marrakech</p>
                                     </div>
                                 </div>
                                 <button

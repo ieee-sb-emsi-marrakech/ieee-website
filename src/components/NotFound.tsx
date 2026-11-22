@@ -74,7 +74,7 @@ export default function NotFound() {
                         transition={{ duration: 0.6, delay: 0.8 }}
                     >
                         The page you're looking for seems to have vanished into the digital void. 
-                        Let's get you back to exploring IEEE EMSI Marrakesh.
+                        Let's get you back to exploring IEEE EMSI Marrakech.
                     </motion.p>
 
                     {/* Action Buttons */}

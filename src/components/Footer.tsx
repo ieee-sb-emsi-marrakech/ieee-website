@@ -15,13 +15,13 @@ export default function Footer() {
                         <div className="flex items-center gap-3 mb-6">
                             <img
                                 src="/assets/logo.webp"
-                                alt="IEEE EMSI Marrakesh Logo"
+                                alt="IEEE EMSI Marrakech Logo"
                                 loading="lazy"
                                 className="h-12 w-12 object-contain rounded-lg opacity-80"
                             />
                             <div className="flex flex-col">
                                 <h3 className="text-xl font-black tracking-tight text-ieee-gold leading-none">
-                                    IEEE EMSI Marrakesh
+                                    IEEE EMSI Marrakech
                                 </h3>
                                 <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider leading-none mt-1">
                                     Student Branch
@@ -29,7 +29,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <p className="text-gray-400 leading-relaxed mb-8 font-medium">
-                            Advancing technology for humanity. Join the IEEE Student Branch EMSI Marrakesh in our mission to inspire and innovate.
+                            Advancing technology for humanity. Join the IEEE Student Branch EMSI Marrakech in our mission to inspire and innovate.
                         </p>
                         <div className="flex gap-5">
                             {[
@@ -79,7 +79,7 @@ export default function Footer() {
                                     href="mailto:studentbranchiee@gmail.com"
                                     className="hover:text-ieee-gold transition-colors block w-fit"
                                 >
-                                    studentbranchiee@gmail.com
+                                    ieee.sb.emsi.marrakech@gmail.com
                                 </a>
                             </li>
                             <li>
@@ -89,7 +89,7 @@ export default function Footer() {
                                     rel="noopener noreferrer"
                                     className="hover:text-ieee-gold transition-colors block w-fit"
                                 >
-                                    EMSI Gueliz, Marrakesh, Morocco
+                                    EMSI Targa, Marrakech, Morocco
                                 </a>
                             </li>
                             <li>
@@ -105,7 +105,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">
-                    <p>© {currentYear} IEEE Student Branch EMSI Marrakesh.</p>
+                    <p>© {currentYear} IEEE Student Branch EMSI Marrakcsh.</p>
                     <div className="flex gap-10">
                         <PrivacyPolicy
                             trigger={<button className="hover:text-ieee-gold transition-colors">Privacy</button>}

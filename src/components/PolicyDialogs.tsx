@@ -35,7 +35,7 @@ export const PrivacyPolicy = ({ trigger }: { trigger: React.ReactNode }) => (
         content={
             <div className="space-y-4 text-gray-300">
                 <p>
-                    As a student-led branch at EMSI Marrakesh, we value your trust. We only collect data that you voluntarily provide through our contact forms or event registrations.
+                    As a student-led branch at EMSI Marrakech, we value your trust. We only collect data that you voluntarily provide through our contact forms or event registrations.
                 </p>
                 <p>
                     This information (typically your name, email, and academic department) is used exclusively to:
@@ -60,7 +60,7 @@ export const TermsOfService = ({ trigger }: { trigger: React.ReactNode }) => (
         content={
             <div className="space-y-4 text-gray-300">
                 <p>
-                    By interacting with IEEE EMSI Marrakesh and attending our events, you join a community built on technical excellence and mutual respect.
+                    By interacting with IEEE EMSI Marrakech and attending our events, you join a community built on technical excellence and mutual respect.
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                     <li><span className="text-ieee-gold font-bold">Inclusivity:</span> We welcome all students regardless of their background or level of expertise.</li>
