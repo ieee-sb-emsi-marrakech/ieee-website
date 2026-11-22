@@ -1,6 +1,6 @@
-# IEEE Student Branch EMSI Marrakesh Website
+# IEEE Student Branch EMSI Marrakech Website
 
-Welcome to the official website of the IEEE Student Branch at EMSI Marrakesh. This platform is designed to showcase our team, our achievements, our cells, and our upcoming events.
+Welcome to the official website of the IEEE Student Branch at EMSI Marrakech. This platform is designed to showcase our team, our achievements, our cells, and our upcoming events.
 
 ## Features
 
