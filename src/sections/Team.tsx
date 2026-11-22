@@ -17,7 +17,7 @@ export default function Team() {
                         Our <span className="text-ieee-gold">Team</span>
                     </h2>
                     <p className="max-w-2xl mx-auto text-lg text-gray-400">
-                        Meet the dedicated students leading the IEEE Student Branch EMSI Marrakesh.
+                        Meet the dedicated students leading the IEEE Student Branch EMSI Marrakech.
                     </p>
                 </div>
 
@@ -119,7 +119,7 @@ export default function Team() {
                 >
                     <div className="inline-block">
                         <h3 className="text-2xl font-black text-white mb-6 uppercase tracking-[0.2em] text-center">
-                            Connect with <span className="text-ieee-gold">IEEE S.B EMSI Marrakesh</span>
+                            Connect with <span className="text-ieee-gold">IEEE S.B EMSI Marrakech</span>
                         </h3>
                         <div className="flex justify-center gap-6">
                             {[

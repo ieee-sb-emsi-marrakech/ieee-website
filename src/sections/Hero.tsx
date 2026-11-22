@@ -23,10 +23,10 @@ export default function Hero() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-ieee-gold uppercase bg-ieee-gold/10 border border-ieee-gold/20 rounded-full">
-                            IEEE S.B EMSI Marrakesh
+                            IEEE S.B EMSI Marrakech
                         </span>
                         <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-white md:text-8xl">
-                            IEEE S.B <span className="text-ieee-gold">EMSI Marrakesh</span>
+                            IEEE S.B <span className="text-ieee-gold">EMSI Marrakech</span>
                         </h1>
                         <p className="max-w-2xl mx-auto mb-10 text-lg text-gray-400 md:text-xl leading-relaxed">
                             Empowering students through technology, innovation, and leadership.

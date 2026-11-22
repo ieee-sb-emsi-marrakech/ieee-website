@@ -38,7 +38,7 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/emsistes_innov/thumb.webp",
         category: "Competition",
         type: "competition",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: false,
         detailedDescription: "Join us for an exciting innovation competition where participants showcase their projects in intelligent and emerging technologies. Competitors will tackle real-world challenges, contribute to building solutions for a sustainable and inclusive future, and present their ideas to a panel of experts and industry professionals.",
         objectives: [
@@ -63,13 +63,13 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/git_and_github/thumb.webp",
         category: "Workshop",
         type: "workshop",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "The Git & GitHub Workshop was an essential hands-on session for students to master version control and collaborative development. Participants learned the core concepts of Git, including repositories, commits, branching, and merging. The workshop also covered GitHub features such as pull requests, issues, and collaboration workflows. Attendees gained practical experience in managing code history and working effectively in team environments.",
         speakers: [
             {
                 name: "Youness SBAI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         objectives: [
@@ -101,17 +101,17 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/tia_portal/thumb.webp",
         category: "Workshop",
         type: "workshop",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "The TIA Portal Workshop was a practical, hands-on session designed to introduce students to the world of industrial automation. Participants learned the fundamentals of PLC (Programmable Logic Controller) programming and HMI (Human Machine Interface) design using Siemens Totally Integrated Automation (TIA) Portal. The workshop covered hardware configuration, ladder logic programming, simulation techniques, and interface creation. Attendees gained real-world skills in automating industrial processes and troubleshooting automated systems.",
         speakers: [
             {
                 name: "Imane HAJAOUI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             },
             {
                 name: "Tahra AIT JDI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         objectives: [
@@ -141,13 +141,13 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/power_bi/thumb.webp",
         category: "Workshop",
         type: "workshop",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "The Power BI Workshop was a hands-on session designed to introduce students to the world of data visualization and business intelligence. Participants learned how to transform raw data into meaningful insights using Microsoft Power BI. The workshop covered data connection, cleaning with Power Query, modeling, and creating interactive dashboards. Attendees gained practical skills in using DAX formulas and designing professional reports to drive data-driven decision-making.",
         speakers: [
             {
                 name: "Marwa BOULLY",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         objectives: [
@@ -177,7 +177,7 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/vision_ai/thumb.webp",
         category: "Competition",
         type: "competition",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "Vision AI was a competition centered around Artificial Intelligence in all its forms. Participants developed and presented their own AI projects, ranging from problem-solving applications to innovative systems introducing entirely new ideas. Each team pitched their solution in front of a jury, explaining the concept, technical implementation, real-world impact, and future potential. The jury evaluated projects based on creativity, technical depth, feasibility, and presentation quality.",
         objectives: [
@@ -219,13 +219,13 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/catia/thumb.webp",
         category: "Bootcamp",
         type: "bootcamp",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "A hands-on CATIA bootcamp composed of two workshops aimed at introducing students to one of the most powerful CAD tools used in the mechanical, automotive, and aerospace industries. The bootcamp focused on building a strong foundation in CATIA, from understanding its industrial relevance to mastering its interface and core functionalities. Through practical guidance and real-world insights, participants strengthened their CAD and design skills while preparing for advanced engineering projects.",
         speakers: [
             {
                 name: "Yahya LOUKILI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         objectives: [
@@ -258,13 +258,13 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/thumb.webp",
         category: "Bootcamp",
         type: "bootcamp",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "An intensive hands-on bootcamp designed to introduce students to the exciting world of cyber security and CTF competitions. Participants learned essential security concepts, practiced penetration testing techniques, and competed in live CTF challenges. The bootcamp covered web security, cryptography and reverse engineering fundamentals.",
         speakers: [
             {
                 name: "Youness SBAI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         tools: [
@@ -295,13 +295,13 @@ export const events: Event[] = [
         image: "/assets/events/2025-2026/entrepreneuriat/thumb.webp",
         category: "Talk",
         type: "talk",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "An inspiring talk introducing students to the fundamentals of entrepreneurship and innovation. The session covered essential topics including idea validation, business model development, startup funding, and the entrepreneurial mindset. Attendees learned from successful entrepreneurs about their journey, challenges, and key lessons learned in building successful ventures.",
         speakers: [
             {
                 name: "Dr. Inass BOUBEKRI",
-                role: "Doctor in Economics - Professor at EMSI Marrakesh - Business Consultant"
+                role: "Doctor in Economics - Professor at EMSI Marrakech - Business Consultant"
             }
         ],
         media: [
@@ -320,7 +320,7 @@ export const events: Event[] = [
         image: "/assets/events/2024-2025/emsistes_innov/thumb.webp",
         category: "Competition",
         type: "competition",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "EMSIstes INNOV is an innovation-driven competition that brought together students to design and prototype smart systems addressing real-world challenges. The competition focused on key domains such as HealthTech, Smart Mobility, Renewable Energy, and Artificial Intelligence. Teams worked collaboratively to develop impactful solutions, combining technical skills, creativity, and entrepreneurial thinking, before presenting their projects to a jury.",
         objectives: [
@@ -348,13 +348,13 @@ export const events: Event[] = [
         image: "/assets/events/2024-2025/solidworks/thumb.webp",
         category: "Workshop",
         type: "workshop",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "A comprehensive hands-on workshop introducing students to professional 3D CAD modeling using SolidWorks. Participants learned fundamental modeling techniques, assembly creation, technical drawing generation, and simulation basics. The workshop included practical exercises where students designed and modeled real-world mechanical components and assemblies.",
         speakers: [
             {
                 name: "Mouad ELCRAFSI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         tools: [
@@ -375,13 +375,13 @@ export const events: Event[] = [
         image: "/assets/events/2024-2025/cloud_computing_with_aws/thumb.webp",
         category: "Workshop",
         type: "workshop",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "An introductory workshop on cloud computing fundamentals using Amazon Web Services (AWS). Students learned about cloud architecture, core AWS services, and hands-on deployment of applications. The workshop covered EC2, S3, RDS, Lambda, and basic DevOps practices. Participants gained practical experience by deploying their first cloud-based applications and understanding cloud cost optimization.",
         speakers: [
             {
                 name: "Majdouline SABRI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         tools: [
@@ -408,17 +408,17 @@ export const events: Event[] = [
         image: "/assets/events/2024-2025/linux/thumb.webp",
         category: "Workshop",
         type: "workshop",
-        location: "EMSI Marrakesh",
+        location: "EMSI Marrakech",
         isPast: true,
         detailedDescription: "A comprehensive workshop designed to empower students with essential Linux skills. From basic command-line operations to advanced system administration, participants learned to navigate the Linux ecosystem with confidence. The workshop covered file system management, shell scripting, process management, networking basics, and package management. Students gained hands-on experience through practical exercises and real-world scenarios.",
         speakers: [
             {
                 name: "Abdelilah HABIB",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             },
             {
                 name: "Mohamed ERRAJI",
-                role: "Student at EMSI Marrakesh"
+                role: "Student at EMSI Marrakech"
             }
         ],
         tools: [

@@ -22,7 +22,7 @@ Welcome to the official website of the IEEE Student Branch at EMSI Marrakech. Th
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/ieee-student-branch-emsi-marrakesh/ieee-website.git
+    git clone https://github.com/ieee-sb-emsi-marrakech/ieee-website.git
     ```
 2.  **Install dependencies**:
     ```bash

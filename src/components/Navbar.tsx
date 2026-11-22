@@ -47,7 +47,7 @@ export default function Navbar() {
                     <div className="relative">
                         <img
                             src="/assets/logo.webp"
-                            alt="IEEE EMSI Marrakesh Logo"
+                            alt="IEEE EMSI Marrakech Logo"
                             loading="lazy"
                             className="h-10 w-10 object-contain rounded-lg transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(255,184,28,0.4)]"
                         />
@@ -55,7 +55,7 @@ export default function Navbar() {
                     {/* Club Name */}
                     <div className="flex flex-col">
                         <span className="text-lg font-black tracking-tight text-ieee-gold leading-none group-hover:text-white transition-colors">
-                            IEEE EMSI Marrakesh
+                            IEEE EMSI Marrakech
                         </span>
                         <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider leading-none mt-0.5">
                             Student Branch

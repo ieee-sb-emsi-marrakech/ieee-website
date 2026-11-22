@@ -1,5 +1,5 @@
 /**
- * IEEE EMSI Marrakesh Achievements & Awards
+ * IEEE EMSI Marrakech Achievements & Awards
  * Competitions where members participated and won prizes
  */
 
@@ -28,7 +28,7 @@ export const achievements: Achievement[] = [
         prizeRank: "1st",
         projectName: "EyeTalk",
         competitionName: "AISEC 2025",
-        institution: "ENSA Marrakesh",
+        institution: "ENSA Marrakech",
         image: "/assets/achievements/aisec_ziad.webp",
     },
     {

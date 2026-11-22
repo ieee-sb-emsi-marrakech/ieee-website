@@ -29,7 +29,7 @@ export default function TeamPage() {
                                 Our <span className="text-ieee-gold">Full Team</span>
                             </h1>
                             <p className="max-w-2xl mx-auto text-lg text-gray-400">
-                                Meet all the dedicated students leading the IEEE Student Branch EMSI Marrakesh.
+                                Meet all the dedicated students leading the IEEE Student Branch EMSI Marrakech.
                             </p>
                         </div>
 

@@ -1,4 +1,4 @@
-# Contributing to IEEE SB EMSI Marrakesh Website
+# Contributing to IEEE SB EMSI Marrakech Website
 
 Welcome! We're excited that you're interested in contributing to our website. This document provides everything you need to know about the project structure, how to set things up locally, and our development workflow.
 
@@ -12,7 +12,7 @@ Welcome! We're excited that you're interested in contributing to our website. Th
 ### 2. Getting Started
 ```bash
 # Clone the repository
-git clone https://github.com/ieee-student-branch-emsi-marrakesh/ieee-website.git
+git clone https://github.com/ieee-sb-emsi-marrakech/ieee-website.git
 cd ieee-website
 
 # Install dependencies
@@ -89,6 +89,6 @@ npm run optimize
 ---
 
 ## Contact & Support
-This repository is primarily maintained by and for the **IT Department** of IEEE S.B EMSI Marrakesh. 
+This repository is primarily maintained by and for the **IT Department** of IEEE S.B EMSI Marrakech. 
 
 If you've been assigned to work on this project, please coordinate with the **IT Section Manager** or **IT Assistant** for any architectural decisions or major feature additions.

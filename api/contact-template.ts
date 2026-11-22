@@ -37,7 +37,7 @@ export function buildContactEmail(data: ContactData): string {
                 ⚡ IEEE Student Branch
               </h1>
               <p style="margin:6px 0 0; color:rgba(255,255,255,0.75); font-size:13px; letter-spacing:1px; text-transform:uppercase;">
-                EMSI Marrakesh — New Contact Message
+                EMSI Marrakech — New Contact Message
               </p>
             </td>
           </tr>
@@ -81,7 +81,7 @@ export function buildContactEmail(data: ContactData): string {
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
                 <tr>
                   <td align="center">
-                    <a href="mailto:${safeEmail}?subject=Re: Your Contact Message to IEEE S.B EMSI Marrakesh" style="display:inline-block; padding:14px 32px; background-color:#00629B; color:#ffffff; border-radius:10px; text-decoration:none; font-weight:700; font-size:14px; letter-spacing:0.5px;">
+                    <a href="mailto:${safeEmail}?subject=Re: Your Contact Message to IEEE S.B EMSI Marrakech" style="display:inline-block; padding:14px 32px; background-color:#00629B; color:#ffffff; border-radius:10px; text-decoration:none; font-weight:700; font-size:14px; letter-spacing:0.5px;">
                       Reply to Contact →
                     </a>
                   </td>
@@ -94,7 +94,7 @@ export function buildContactEmail(data: ContactData): string {
           <tr>
             <td style="background-color:#f8f9fc; padding:20px 40px; text-align:center; border-top:1px solid #e8ecf1;">
               <p style="margin:0; color:#8892a4; font-size:12px;">
-                Sent from <strong>IEEE S.B EMSI Marrakesh</strong> website contact form
+                Sent from <strong>IEEE S.B EMSI Marrakech</strong> website contact form
               </p>
             </td>
           </tr>

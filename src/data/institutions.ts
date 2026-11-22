@@ -15,9 +15,9 @@ export const INSTITUTIONS = {
         height: 60,
     },
     emsi: {
-        name: "EMSI Marrakesh",
+        name: "EMSI Marrakech",
         logo: "/assets/emsi.webp",
-        alt: "EMSI Marrakesh Logo",
+        alt: "EMSI Marrakech Logo",
         width: 120,
         height: 60,
     },
