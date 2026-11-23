@@ -26,7 +26,12 @@ export interface Event {
     gallery?: string[]; // Deprecated in favor of media
     media?: Media[];
     registrationLink?: string;
+    year: string;
 }
+
+export const EVENT_YEARS = ["2026/2027", "2025/2026", "2024/2025"] as const;
+export type EventYear = (typeof EVENT_YEARS)[number];
+export const DEFAULT_EVENT_YEAR: EventYear = "2026/2027";
 
 export const events: Event[] = [
     /* Upcoming Events */
@@ -35,11 +40,12 @@ export const events: Event[] = [
         title: "EMSIstes INNOV'26",
         description: "A competition that offers the perfect opportunity to showcase your project and contribute to the development of intelligent technologies for a sustainable and inclusive future.",
         date: "May 16, 2026",
-        image: "/assets/events/2025-2026/emsistes_innov/thumb.webp",
+        image: "/assets/events/2026-2027/emsistes_innov/thumb.webp",
         category: "Competition",
         type: "competition",
         location: "EMSI Marrakech",
         isPast: false,
+        year: "2026/2027",
         detailedDescription: "Join us for an exciting innovation competition where participants showcase their projects in intelligent and emerging technologies. Competitors will tackle real-world challenges, contribute to building solutions for a sustainable and inclusive future, and present their ideas to a panel of experts and industry professionals.",
         objectives: [
             "Showcase innovative projects in intelligent and emerging technologies",
@@ -49,22 +55,23 @@ export const events: Event[] = [
             "Collaborate and network with like-minded innovators and peers"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/emsistes_innov/thumb.webp" },
+            { type: "image", url: "/assets/events/2026-2027/emsistes_innov/thumb.webp" },
         ],
         registrationLink: "https://docs.google.com/forms/d/1Qi6WkSJHSKbc_bZj1OxLzblbOd6XIo3aI0z_Vt78yDs/",
     },
 
-    /* Past Events */
+    /* Past Events - 2026/2027 */
     {
         id: "git-github",
         title: "Git & GitHub Workshop",
         description: "A comprehensive hands-on workshop on version control fundamentals and collaboration using Git and GitHub.",
         date: "April 16, 2026",
-        image: "/assets/events/2025-2026/git_and_github/thumb.webp",
+        image: "/assets/events/2026-2027/git_and_github/thumb.webp",
         category: "Workshop",
         type: "workshop",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2026/2027",
         detailedDescription: "The Git & GitHub Workshop was an essential hands-on session for students to master version control and collaborative development. Participants learned the core concepts of Git, including repositories, commits, branching, and merging. The workshop also covered GitHub features such as pull requests, issues, and collaboration workflows. Attendees gained practical experience in managing code history and working effectively in team environments.",
         speakers: [
             {
@@ -87,10 +94,10 @@ export const events: Event[] = [
             "Command Line"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/git_and_github/thumb.webp" },
-            { type: "image", url: "/assets/events/2025-2026/git_and_github/1.webp" },
-            { type: "image", url: "/assets/events/2025-2026/git_and_github/2.webp" },
-            { type: "image", url: "/assets/events/2025-2026/git_and_github/3.webp" },
+            { type: "image", url: "/assets/events/2026-2027/git_and_github/thumb.webp" },
+            { type: "image", url: "/assets/events/2026-2027/git_and_github/1.webp" },
+            { type: "image", url: "/assets/events/2026-2027/git_and_github/2.webp" },
+            { type: "image", url: "/assets/events/2026-2027/git_and_github/3.webp" },
         ]
     },
     {
@@ -98,11 +105,12 @@ export const events: Event[] = [
         title: "Tia Portal Workshop",
         description: "A hands-on workshop focused on industrial automation and PLC programming using Siemens TIA Portal.",
         date: "April 9, 2026",
-        image: "/assets/events/2025-2026/tia_portal/thumb.webp",
+        image: "/assets/events/2026-2027/tia_portal/thumb.webp",
         category: "Workshop",
         type: "workshop",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2026/2027",
         detailedDescription: "The TIA Portal Workshop was a practical, hands-on session designed to introduce students to the world of industrial automation. Participants learned the fundamentals of PLC (Programmable Logic Controller) programming and HMI (Human Machine Interface) design using Siemens Totally Integrated Automation (TIA) Portal. The workshop covered hardware configuration, ladder logic programming, simulation techniques, and interface creation. Attendees gained real-world skills in automating industrial processes and troubleshooting automated systems.",
         speakers: [
             {
@@ -129,8 +137,8 @@ export const events: Event[] = [
             "Industrial Automation"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/tia_portal/thumb.webp" },
-            { type: "image", url: "/assets/events/2025-2026/tia_portal/1.webp" },
+            { type: "image", url: "/assets/events/2026-2027/tia_portal/thumb.webp" },
+            { type: "image", url: "/assets/events/2026-2027/tia_portal/1.webp" },
         ]
     },
     {
@@ -138,11 +146,12 @@ export const events: Event[] = [
         title: "Power BI Workshop",
         description: "A hands-on workshop focused on data visualization and business intelligence using Microsoft Power BI.",
         date: "April 2, 2026",
-        image: "/assets/events/2025-2026/power_bi/thumb.webp",
+        image: "/assets/events/2026-2027/power_bi/thumb.webp",
         category: "Workshop",
         type: "workshop",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2026/2027",
         detailedDescription: "The Power BI Workshop was a hands-on session designed to introduce students to the world of data visualization and business intelligence. Participants learned how to transform raw data into meaningful insights using Microsoft Power BI. The workshop covered data connection, cleaning with Power Query, modeling, and creating interactive dashboards. Attendees gained practical skills in using DAX formulas and designing professional reports to drive data-driven decision-making.",
         speakers: [
             {
@@ -164,9 +173,9 @@ export const events: Event[] = [
             "Business Intelligence"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/power_bi/thumb.webp" },
-            { type: "image", url: "/assets/events/2025-2026/power_bi/1.webp" },
-            { type: "image", url: "/assets/events/2025-2026/power_bi/2.webp" },
+            { type: "image", url: "/assets/events/2026-2027/power_bi/thumb.webp" },
+            { type: "image", url: "/assets/events/2026-2027/power_bi/1.webp" },
+            { type: "image", url: "/assets/events/2026-2027/power_bi/2.webp" },
         ]
     },
     {
@@ -174,11 +183,12 @@ export const events: Event[] = [
         title: "Vision AI Competition",
         description: "A competition showcasing innovative AI projects and solutions.",
         date: "February 14, 2026",
-        image: "/assets/events/2025-2026/vision_ai/thumb.webp",
+        image: "/assets/events/2026-2027/vision_ai/thumb.webp",
         category: "Competition",
         type: "competition",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2026/2027",
         detailedDescription: "Vision AI was a competition centered around Artificial Intelligence in all its forms. Participants developed and presented their own AI projects, ranging from problem-solving applications to innovative systems introducing entirely new ideas. Each team pitched their solution in front of a jury, explaining the concept, technical implementation, real-world impact, and future potential. The jury evaluated projects based on creativity, technical depth, feasibility, and presentation quality.",
         objectives: [
             "Encourage students to design and build original AI-based projects",
@@ -194,23 +204,25 @@ export const events: Event[] = [
             "Natural Language Processing"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/thumb.webp" },
-            { type: "video", url: "/assets/events/2025-2026/vision_ai/thriller.mp4" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo1.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo2.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo3.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo4.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo5.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo6.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo7.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo8.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo9.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo10.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo11.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo12.webp" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo13.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/thumb.webp" },
+            { type: "video", url: "/assets/events/2026-2027/vision_ai/thriller.mp4" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo1.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo2.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo3.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo4.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo5.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo6.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo7.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo8.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo9.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo10.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo11.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo12.webp" },
+            { type: "image", url: "/assets/events/2026-2027/vision_ai/photo13.webp" },
         ]
     },
+
+    /* Past Events - 2025/2026 */
     {
         id: "catia-bootcamp",
         title: "CATIA Design Bootcamp",
@@ -221,6 +233,7 @@ export const events: Event[] = [
         type: "bootcamp",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2025/2026",
         detailedDescription: "A hands-on CATIA bootcamp composed of two workshops aimed at introducing students to one of the most powerful CAD tools used in the mechanical, automotive, and aerospace industries. The bootcamp focused on building a strong foundation in CATIA, from understanding its industrial relevance to mastering its interface and core functionalities. Through practical guidance and real-world insights, participants strengthened their CAD and design skills while preparing for advanced engineering projects.",
         speakers: [
             {
@@ -260,6 +273,7 @@ export const events: Event[] = [
         type: "bootcamp",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2025/2026",
         detailedDescription: "An intensive hands-on bootcamp designed to introduce students to the exciting world of cyber security and CTF competitions. Participants learned essential security concepts, practiced penetration testing techniques, and competed in live CTF challenges. The bootcamp covered web security, cryptography and reverse engineering fundamentals.",
         speakers: [
             {
@@ -297,6 +311,7 @@ export const events: Event[] = [
         type: "talk",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2025/2026",
         detailedDescription: "An inspiring talk introducing students to the fundamentals of entrepreneurship and innovation. The session covered essential topics including idea validation, business model development, startup funding, and the entrepreneurial mindset. Attendees learned from successful entrepreneurs about their journey, challenges, and key lessons learned in building successful ventures.",
         speakers: [
             {
@@ -312,6 +327,8 @@ export const events: Event[] = [
             { type: "video", url: "/assets/events/2025-2026/entrepreneuriat/video.mp4" },
         ]
     },
+
+    /* Past Events - 2024/2025 */
     {
         id: "emsistes-innov25",
         title: "EMSIstes INNOV'25",
@@ -322,6 +339,7 @@ export const events: Event[] = [
         type: "competition",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2024/2025",
         detailedDescription: "EMSIstes INNOV is an innovation-driven competition that brought together students to design and prototype smart systems addressing real-world challenges. The competition focused on key domains such as HealthTech, Smart Mobility, Renewable Energy, and Artificial Intelligence. Teams worked collaboratively to develop impactful solutions, combining technical skills, creativity, and entrepreneurial thinking, before presenting their projects to a jury.",
         objectives: [
             "Encourage innovation and problem-solving using smart systems",
@@ -350,6 +368,7 @@ export const events: Event[] = [
         type: "workshop",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2024/2025",
         detailedDescription: "A comprehensive hands-on workshop introducing students to professional 3D CAD modeling using SolidWorks. Participants learned fundamental modeling techniques, assembly creation, technical drawing generation, and simulation basics. The workshop included practical exercises where students designed and modeled real-world mechanical components and assemblies.",
         speakers: [
             {
@@ -377,6 +396,7 @@ export const events: Event[] = [
         type: "workshop",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2024/2025",
         detailedDescription: "An introductory workshop on cloud computing fundamentals using Amazon Web Services (AWS). Students learned about cloud architecture, core AWS services, and hands-on deployment of applications. The workshop covered EC2, S3, RDS, Lambda, and basic DevOps practices. Participants gained practical experience by deploying their first cloud-based applications and understanding cloud cost optimization.",
         speakers: [
             {
@@ -410,6 +430,7 @@ export const events: Event[] = [
         type: "workshop",
         location: "EMSI Marrakech",
         isPast: true,
+        year: "2024/2025",
         detailedDescription: "A comprehensive workshop designed to empower students with essential Linux skills. From basic command-line operations to advanced system administration, participants learned to navigate the Linux ecosystem with confidence. The workshop covered file system management, shell scripting, process management, networking basics, and package management. Students gained hands-on experience through practical exercises and real-world scenarios.",
         speakers: [
             {
