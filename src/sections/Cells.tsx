@@ -14,7 +14,7 @@ import { CheckCircle2, ChevronRight } from "lucide-react";
 
 export default function Cells() {
     return (
-        <section id="cells" className="py-24 bg-ieee-navy relative">
+        <section id="cells" className="py-24 bg-ieee-navy relative hidden">
             {/* Background circuit design - subtle */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none circuit-pattern" />
 

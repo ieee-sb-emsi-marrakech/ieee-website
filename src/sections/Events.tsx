@@ -1,20 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import { events, EVENT_YEARS, DEFAULT_EVENT_YEAR } from "@/data/events";
+import { motion } from "framer-motion";
+import { events } from "@/data/events";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
 import EventModal from "@/components/EventModal";
-import YearSelector from "@/components/YearSelector";
 import type { Event } from "@/data/events";
 
 export default function Events() {
-    const [selectedYear, setSelectedYear] = useState<string>(DEFAULT_EVENT_YEAR);
     const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
     const [modalOpen, setModalOpen] = useState(false);
 
     const upcomingEvents = events.filter(e => !e.isPast);
-    const pastEvents = events.filter(e => e.isPast && e.year === selectedYear);
+    const pastEvents = events.filter(e => e.isPast);
     const displayedPastEvents = pastEvents.slice(0, 4);
 
     const handleEventClick = (event: Event) => {
@@ -104,71 +102,46 @@ export default function Events() {
                         <h3 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">
                             Past <span className="text-ieee-gold">Moments</span>
                         </h3>
-                        <p className="max-w-2xl mx-auto text-lg text-gray-400 mb-6">
+                        <p className="max-w-2xl mx-auto text-lg text-gray-400">
                             Relive the memories and highlights of our past events and workshops.
                         </p>
-                        <div className="flex justify-center mt-6">
-                            <YearSelector
-                                years={EVENT_YEARS}
-                                currentYear={selectedYear}
-                                onYearChange={setSelectedYear}
-                            />
-                        </div>
                     </div>
 
-                    {displayedPastEvents.length > 0 ? (
-                        <AnimatePresence mode="wait">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {displayedPastEvents.map((event, index) => (
                             <motion.div
-                                key={selectedYear}
-                                initial={{ opacity: 0, y: 15 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -15 }}
-                                transition={{ duration: 0.3 }}
-                                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                                key={`${event.id}-${index}`}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.4, delay: index * 0.05 }}
                             >
-                                {displayedPastEvents.map((event, index) => (
-                                    <motion.div
-                                        key={`${selectedYear}-${event.id}-${index}`}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    >
-                                        <Card
-                                            className="overflow-hidden border border-white/5 bg-ieee-navy rounded-3xl h-full hover:shadow-blue-glow hover:border-ieee-blue/20 transition-all group cursor-pointer"
-                                            onClick={() => handleEventClick(event)}
-                                        >
-                                            <div className="aspect-video bg-ieee-navy-light relative overflow-hidden">
-                                                <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                                                    <Calendar size={48} className="text-white" />
-                                                </div>
-                                                <img
-                                                    src={event.image}
-                                                    alt={event.title}
-                                                    loading="lazy"
-                                                    className="absolute inset-0 object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                                                    onError={(e) => {
-                                                        e.currentTarget.style.display = 'none';
-                                                    }}
-                                                />
-                                            </div>
-                                            <CardContent className="p-6">
-                                                <h5 className="font-bold text-white truncate transition-colors group-hover:text-ieee-blue">{event.title}</h5>
-                                                <p className="text-[10px] text-gray-500 mt-2 uppercase tracking-widest font-bold">{event.date}</p>
-                                            </CardContent>
-                                        </Card>
-                                    </motion.div>
-                                ))}
+                                <Card
+                                    className="overflow-hidden border border-white/5 bg-ieee-navy rounded-3xl h-full hover:shadow-blue-glow hover:border-ieee-blue/20 transition-all group cursor-pointer"
+                                    onClick={() => handleEventClick(event)}
+                                >
+                                    <div className="aspect-video bg-ieee-navy-light relative overflow-hidden">
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-10">
+                                            <Calendar size={48} className="text-white" />
+                                        </div>
+                                        <img
+                                            src={event.image}
+                                            alt={event.title}
+                                            loading="lazy"
+                                            className="absolute inset-0 object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                            onError={(e) => {
+                                                e.currentTarget.style.display = 'none';
+                                            }}
+                                        />
+                                    </div>
+                                    <CardContent className="p-6">
+                                        <h5 className="font-bold text-white truncate transition-colors group-hover:text-ieee-blue">{event.title}</h5>
+                                        <p className="text-[10px] text-gray-500 mt-2 uppercase tracking-widest font-bold">{event.date}</p>
+                                    </CardContent>
+                                </Card>
                             </motion.div>
-                        </AnimatePresence>
-                    ) : (
-                        <div className="text-center py-16 px-4 bg-ieee-navy/50 border border-white/5 rounded-3xl max-w-lg mx-auto">
-                            <Calendar className="w-12 h-12 text-ieee-gold/40 mx-auto mb-3" />
-                            <h4 className="text-lg font-bold text-white mb-2">No Past Events in {selectedYear}</h4>
-                            <p className="text-gray-400 text-sm">
-                                No past events recorded for this year yet. Use the arrows to browse other years.
-                            </p>
-                        </div>
-                    )}
+                        ))}
+                    </div>
 
                     {/* Always keep the "Show All Past Events" button visible */}
                     <motion.div
