@@ -89,7 +89,7 @@ export default function Footer() {
                                     rel="noopener noreferrer"
                                     className="hover:text-ieee-gold transition-colors block w-fit"
                                 >
-                                    EMSI Targa, Marrakech, Morocco
+                                    EMSI Targa, Marrakesh, Morocco
                                 </a>
                             </li>
                             <li>
@@ -105,7 +105,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">
-                    <p>© {currentYear} IEEE Student Branch EMSI Marrakcsh.</p>
+                    <p>© {currentYear} IEEE Student Branch EMSI Marrakech.</p>
                     <div className="flex gap-10">
                         <PrivacyPolicy
                             trigger={<button className="hover:text-ieee-gold transition-colors">Privacy</button>}

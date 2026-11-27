@@ -47,10 +47,10 @@ export default function About() {
                         </h2>
                         <div className="space-y-6 mb-8">
                             <p className="text-lg leading-relaxed text-gray-400">
-                                The IEEE Student Branch is a student organization at <span className="text-white font-semibold">EMSI Marrakech</span> dedicated to promoting technical excellence and professional growth among students. We operate under the expert academic supervision of <span className="text-white font-semibold">Laboratoire LAMIGEP</span>, fostering a culture of engineering excellence, research, and innovation.
+                                The IEEE Student Branch is a student organization at <span className="text-white font-semibold">EMSI Marrakesh</span> dedicated to promoting technical excellence and professional growth among students. We operate under the expert academic supervision of <span className="text-white font-semibold">Laboratoire LAMIGEP</span>, fostering a culture of engineering excellence, research, and innovation.
                             </p>
                             <p className="text-lg leading-relaxed text-gray-400">
-                                As part of IEEE—the world's largest technical professional organization—our branch serves as a bridge between academic theory and practical industry application, empowering the next generation of Moroccan engineers.
+                                As part of IEEE - the world's largest technical professional organization - our branch serves as a bridge between academic theory and practical industry application, empowering the next generation of Moroccan engineers.
                             </p>
                         </div>
 

@@ -33,7 +33,7 @@ export const CONTACT_EMAIL = "ieee.sb.emsi.marrakech@gmail.com";
  */
 export const CONTACT_INFO: ContactInfo = {
     email: CONTACT_EMAIL,
-    location: "EMSI Targa, Marrakech, Morocco",
+    location: "EMSI Targa, Marrakesh, Morocco",
 };
 
 /**
