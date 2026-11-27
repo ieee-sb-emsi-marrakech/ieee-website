@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { events } from "@/data/events";
+import { events, EVENT_YEARS, DEFAULT_EVENT_YEAR } from "@/data/events";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import EventModal from "@/components/EventModal";
+import YearSelector from "@/components/YearSelector";
 import type { Event } from "@/data/events";
 
 export default function EventsPage() {
-    const upcomingEvents = events.filter(e => !e.isPast);
-    const pastEvents = events.filter(e => e.isPast);
+    const [selectedYear, setSelectedYear] = useState<string>(DEFAULT_EVENT_YEAR);
     const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
     const [modalOpen, setModalOpen] = useState(false);
+
+    const upcomingEvents = events.filter(e => !e.isPast);
+    const filteredPastEvents = events.filter(e => e.isPast && e.year === selectedYear);
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "instant" });
@@ -106,40 +109,68 @@ export default function EventsPage() {
 
                         {/* Past Events Gallery */}
                         <div className="relative z-20">
-                            <h2 className="text-2xl font-bold mb-10 flex items-center gap-3 text-white">
-                                <span className="w-10 h-1 bg-white/10 rounded-full" />
-                                Past Moments
-                            </h2>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <AnimatePresence mode="popLayout">
-                                    {pastEvents.map((event, index) => (
-                                        <motion.div
-                                            key={index}
-                                            initial={{ opacity: 0, y: 20 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.5, delay: index * 0.05 }}
-                                        >
-                                            <Card
-                                                className="overflow-hidden border border-white/5 bg-ieee-navy rounded-3xl h-full hover:shadow-blue-glow hover:border-ieee-blue/20 transition-all group cursor-pointer"
-                                                onClick={() => handleEventClick(event)}
-                                            >
-                                                <div className="aspect-video bg-ieee-navy-light relative overflow-hidden">
-                                                    <img
-                                                        src={event.image}
-                                                        alt={event.title}
-                                                        className="absolute inset-0 object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                                                    />
-                                                </div>
-                                                <CardContent className="p-6">
-                                                    <h4 className="font-bold text-white truncate transition-colors group-hover:text-ieee-blue">{event.title}</h4>
-                                                    <p className="text-[10px] text-gray-500 mt-2 uppercase tracking-widest font-bold">{event.date}</p>
-                                                </CardContent>
-                                            </Card>
-                                        </motion.div>
-                                    ))}
-                                </AnimatePresence>
+                            <div className="text-center mb-16">
+                                <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
+                                    Past <span className="text-ieee-gold">Moments</span>
+                                </h2>
+                                <p className="max-w-2xl mx-auto text-lg text-gray-400 mb-6">
+                                    Relive the memories, workshops, and highlights from each academic year.
+                                </p>
+                                <div className="flex justify-center mt-6">
+                                    <YearSelector
+                                        years={EVENT_YEARS}
+                                        currentYear={selectedYear}
+                                        onYearChange={setSelectedYear}
+                                    />
+                                </div>
                             </div>
+
+                            {filteredPastEvents.length > 0 ? (
+                                <AnimatePresence mode="wait">
+                                    <motion.div
+                                        key={selectedYear}
+                                        initial={{ opacity: 0, y: 15 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -15 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                                    >
+                                        {filteredPastEvents.map((event, index) => (
+                                            <motion.div
+                                                key={`${selectedYear}-${event.id}-${index}`}
+                                                initial={{ opacity: 0, y: 20 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 0.4, delay: index * 0.05 }}
+                                            >
+                                                <Card
+                                                    className="overflow-hidden border border-white/5 bg-ieee-navy rounded-3xl h-full hover:shadow-blue-glow hover:border-ieee-blue/20 transition-all group cursor-pointer"
+                                                    onClick={() => handleEventClick(event)}
+                                                >
+                                                    <div className="aspect-video bg-ieee-navy-light relative overflow-hidden">
+                                                        <img
+                                                            src={event.image}
+                                                            alt={event.title}
+                                                            className="absolute inset-0 object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                                        />
+                                                    </div>
+                                                    <CardContent className="p-6">
+                                                        <h4 className="font-bold text-white truncate transition-colors group-hover:text-ieee-blue">{event.title}</h4>
+                                                        <p className="text-[10px] text-gray-500 mt-2 uppercase tracking-widest font-bold">{event.date}</p>
+                                                    </CardContent>
+                                                </Card>
+                                            </motion.div>
+                                        ))}
+                                    </motion.div>
+                                </AnimatePresence>
+                            ) : (
+                                <div className="text-center py-16 px-4 bg-ieee-navy-light/40 border border-white/5 rounded-3xl max-w-lg mx-auto">
+                                    <Calendar className="w-12 h-12 text-ieee-gold/40 mx-auto mb-3" />
+                                    <h3 className="text-lg font-bold text-white mb-2">No Past Events in {selectedYear}</h3>
+                                    <p className="text-gray-400 text-sm">
+                                        No past events recorded for this year yet. Use the arrows to browse other years.
+                                    </p>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </section>
