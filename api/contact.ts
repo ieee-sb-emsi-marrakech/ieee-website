@@ -40,7 +40,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const data = await resend.emails.send({
       from: 'IEEE Contact <onboarding@resend.dev>',
-      to: ['studentbranchiee@gmail.com'],
+      to: ['ieee.sb.emsi.marrakech@gmail.com'],
       replyTo: email,
       subject: `📧 New Contact Message — ${name}`,
       html: buildContactEmail({
