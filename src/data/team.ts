@@ -41,6 +41,16 @@ const team2026_2027: TeamMember[] = [
         },
     },
     {
+        name: "Yahya LOUKILI",
+        role: "Consultant",
+        image: "/assets/team/2026-2027/yahya_loukili.webp",
+        links: {
+            gmail: "loukiliyahya17@gmail.com",
+            linkedin: "https://www.linkedin.com/in/loukili-yahya-009338313/",
+            instagram: "https://www.instagram.com/loukyahya_",
+        },
+    },
+    {
         name: "Ayoub EL AANBRI",
         role: "Treasurer",
         image: "/assets/team/2026-2027/ayoub_el-aanbri.webp",
@@ -186,7 +196,7 @@ const team2026_2027: TeamMember[] = [
     },
     {
         name: "Hiba GHADFI",
-        role: "Video Editor",
+        role: "Photographer & Video Editor",
         image: "/assets/team/2026-2027/hiba_ghadfi.webp",
         links: {
             gmail: "hibaghadfi0@gmail.com",
