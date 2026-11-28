@@ -39,7 +39,7 @@ export function buildApplicationEmail(data: ApplicationData): string {
                 ⚡ IEEE Student Branch
               </h1>
               <p style="margin:6px 0 0; color:rgba(255,255,255,0.75); font-size:13px; letter-spacing:1px; text-transform:uppercase;">
-                EMSI Marrakech — New Application
+                EMSI Marrakesh - New Application
               </p>
             </td>
           </tr>

@@ -42,7 +42,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       from: 'IEEE Recruitment <onboarding@resend.dev>',
       to: ['ieee.sb.emsi.marrakech@gmail.com'],
       replyTo: email,
-      subject: `🎓 New IEEE Membership Application — ${fullName}`,
+      subject: `🎓 New IEEE Membership Application - ${fullName}`,
       html: buildApplicationEmail({
         fullName,
         email,

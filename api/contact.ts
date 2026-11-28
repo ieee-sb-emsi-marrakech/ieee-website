@@ -42,7 +42,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       from: 'IEEE Contact <onboarding@resend.dev>',
       to: ['ieee.sb.emsi.marrakech@gmail.com'],
       replyTo: email,
-      subject: `📧 New Contact Message — ${name}`,
+      subject: `📧 New Contact Message - ${name}`,
       html: buildContactEmail({
         name,
         email,

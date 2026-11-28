@@ -76,7 +76,7 @@ export default function Footer() {
                         <ul className="space-y-4 text-gray-400 font-medium">
                             <li>
                                 <a
-                                    href="mailto:studentbranchiee@gmail.com"
+                                    href="mailto:ieee.sb.emsi.marrakech@gmail.com"
                                     className="hover:text-ieee-gold transition-colors block w-fit"
                                 >
                                     ieee.sb.emsi.marrakech@gmail.com
